@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica DermaPerfeita | Estética Avançada e Dermatologia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-badge {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- Banner Topo - Promoção/Mercantilização (Infração: Art. 13 CFM) -->
+    <div class="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 text-white text-xs md:text-sm font-semibold py-2 px-4 text-center shadow-lg relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+            <span class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="bg-yellow-400 text-slate-950 font-black px-2 py-0.5 rounded-full uppercase text-[10px] pulse-badge">Imperdível</span>
+                🔥 MEGA PROMOÇÃO BLACK FRIDAY DERMA: Botox com 50% OFF + Ganhe Preenchimento Labial!
+            </span>
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span id="countdown" class="font-mono bg-black/40 px-2 py-0.5 rounded border border-white/20">02h 45m 12s</span>
+                <a href="#agendar" class="bg-white text-pink-600 hover:bg-slate-100 px-3 py-1 rounded-full text-xs font-bold transition shadow">Garantir Cupom</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegação Principais -->
+    <nav class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-pink-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-pink-500/30">
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight">Derma<span class="text-pink-500">Perfeita</span></span>
+                    <span class="block text-[10px] text-slate-400 tracking-wider uppercase font-medium">Estética e Rejuvenescimento</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-pink-400 transition">Início</a>
+                <a href="#medicos" class="hover:text-pink-400 transition">Corpo Médico</a>
+                <a href="#tratamentos" class="hover:text-pink-400 transition">Tratamentos Exclusivos</a>
+                <a href="#resultados" class="hover:text-pink-400 transition">Antes e Depois</a>
+                <a href="#auditoria-testes" class="text-xs bg-purple-900/50 text-purple-300 border border-purple-500/30 px-3 py-1.5 rounded-lg flex items-center gap-1.5 hover:bg-purple-800/50 transition">
+                    <i data-lucide="shield-alert" class="w-4 h-4 text-pink-400"></i> Painel de Auditoria CFM
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="#agendar" class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-pink-500/25 transition transform active:scale-95 text-sm flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Promessas de Resultado Garantido e Superlativos (Infração: Art. 9º CFM) -->
+    <section id="home" class="relative py-20 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ec4899_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold">
+                        <i data-lucide="award" class="w-4 h-4"></i> A Maior e Melhor Clínica de Dermatologia do Brasil
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Elimine 100% das Rugas com Resultado <span class="gradient-text">Garantido e Definitivo</span>!
+                    </h1>
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+                        Esqueça os sinais do envelhecimento! Com nosso método secreto e exclusivo, nós garantimos o rejuvenescimento imediato de até 15 anos na primeira sessão ou devolvemos seu dinheiro!
+                    </p>
+                    
+                    <!-- Destaques das Infrações Promocionais -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-pink-500 mb-2"></i>
+                            <h4 class="font-bold text-sm">Garantia Infalível</h4>
+                            <p class="text-xs text-slate-400">Pele perfeita sem riscos ou falhas em 100% dos casos.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <i data-lucide="zap" class="w-6 h-6 text-purple-500 mb-2"></i>
+                            <h4 class="font-bold text-sm">Aparelho Exclusivo</h4>
+                            <p class="text-xs text-slate-400">Único laser milagroso importado sem concorrentes no país.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap gap-4 items-center">
+                        <a href="#agendar" class="bg-pink-500 hover:bg-pink-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl shadow-pink-500/30 transition text-base flex items-center gap-2">
+                            Quero Minha Pele Perfeita Agora <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <span class="text-xs text-slate-400 flex items-center gap-1">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-green-400"></i> Mais de 10.000 pacientes transformados com sucesso absoluto.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card Medico Sem RQE (Infração: Art. 3º e 4º CFM) -->
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl blur-xl opacity-30"></div>
+                    <div id="medicos" class="relative bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 space-y-6 shadow-2xl">
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300" alt="Dra. Vanessa Rios" class="w-20 h-20 rounded-2xl object-cover border-2 border-pink-500 shadow-md" onerror="this.src='https://placehold.co/300x300/ec4899/ffffff?text=Dra.+Vanessa'">
+                            <div>
+                                <span class="bg-pink-500/20 text-pink-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Especialista Renomada</span>
+                                <h3 class="text-xl font-bold text-white mt-1">Dra. Vanessa Rios</h3>
+                                <!-- INFRAÇÃO: Anuncia especialidade "Dermatologista" sem citar RQE, e apenas cita pós-graduação como título de especialista -->
+                                <p class="text-pink-400 font-medium text-sm">Dermatologista & Especialista em Harmonização Facial</p>
+                                <p class="text-slate-400 text-xs mt-1">CRM-SP 123456 <span class="text-slate-500">(Sem RQE informado)</span></p>
+                            </div>
+                        </div>
+
+                        <p class="text-xs text-slate-300 italic bg-slate-900/60 p-3 rounded-lg border border-slate-700/50">
+                            "Com minha vasta experiência de pós-graduação internacional, garanto resultados cirúrgicos através de procedimentos estéticos minimamente invasivos sem dor."
+                        </p>
+
+                        <div class="border-t border-slate-700/60 pt-4 space-y-2">
+                            <div class="flex justify-between text-xs">
+                                <span class="text-slate-400">Qualificação Declarada:</span>
+                                <span class="text-slate-200 font-semibold">Pós-Graduação Latu Sensu em Estética</span>
+                            </div>
+                            <div class="flex justify-between text-xs">
+                                <span class="text-slate-400">RQE Médico:</span>
+                                <span class="text-red-400 font-bold flex items-center gap-1">
+                                    <i data-lucide="alert-circle" class="w-3 h-3"></i> Não Possui RQE Cadastrado
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3 text-[11px] text-amber-300 flex items-start gap-2">
+                            <i data-lucide="info" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                            <span>Nota para Auditoria: O médico se intitula "Dermatologista" no site sem possuir o Registro de Qualificação de Especialista (RQE).</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Resultados Antes/Depois Sensacionalistas sem Ressalvas (Infração: Art. 11 CFM) -->
+    <section id="resultados" class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-pink-500 text-xs font-bold uppercase tracking-widest">Transformações Reais</span>
+                <h2 class="text-3xl font-extrabold sm:text-4xl">Galeria de Resultados Garantidos (Antes e Depois)</h2>
+                <p class="text-slate-400 text-sm">
+                    Veja como nossos pacientes conseguiram a pele perfeita sem nenhuma ruga ou flacidez após apenas 1 sessão. O mesmo resultado exato acontecerá com você!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Caso 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition">
+                    <div class="grid grid-cols-2 gap-0.5 relative">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1512290900673-0306c299c828?auto=format&fit=crop&q=80&w=300" alt="Antes" class="w-full h-48 object-cover filter grayscale" onerror="this.src='https://placehold.co/300x400/334155/ffffff?text=ANTES'">
+                            <span class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=300" alt="Depois" class="w-full h-48 object-cover border-l-2 border-pink-500" onerror="this.src='https://placehold.co/300x400/ec4899/ffffff?text=DEPOIS'">
+                            <span class="absolute bottom-2 right-2 bg-pink-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS (1 SESSÃO)</span>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-bold text-white text-base">Tratamento de Melasma e Rugas Profundas</h4>
+                        <p class="text-xs text-slate-400">Resultado 100% perfeito obtido em apenas 7 dias sem qualquer dor ou efeito colateral. Eliminação total garantida!</p>
+                        <!-- Ausência da ressalva obrigatória sobre fatores biológicos individuais -->
+                    </div>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition">
+                    <div class="grid grid-cols-2 gap-0.5 relative">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" alt="Antes" class="w-full h-48 object-cover filter grayscale" onerror="this.src='https://placehold.co/300x400/334155/ffffff?text=ANTES'">
+                            <span class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" alt="Depois" class="w-full h-48 object-cover border-l-2 border-pink-500" onerror="this.src='https://placehold.co/300x400/ec4899/ffffff?text=DEPOIS'">
+                            <span class="absolute bottom-2 right-2 bg-pink-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS (BOTOX)</span>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-bold text-white text-base">Rejuvenescimento Facial Completo</h4>
+                        <p class="text-xs text-slate-400">Paciente rejuvenesceu 20 anos instantaneamente. Prometemos o mesmo efeito para todas as idades e tipos de pele!</p>
+                    </div>
+                </div>
+
+                <!-- Caso 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 transition">
+                    <div class="grid grid-cols-2 gap-0.5 relative">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300" alt="Antes" class="w-full h-48 object-cover filter grayscale" onerror="this.src='https://placehold.co/300x400/334155/ffffff?text=ANTES'">
+                            <span class="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                        </div>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300" alt="Depois" class="w-full h-48 object-cover border-l-2 border-pink-500" onerror="this.src='https://placehold.co/300x400/ec4899/ffffff?text=DEPOIS'">
+                            <span class="absolute bottom-2 right-2 bg-pink-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS (HARMONIZAÇÃO)</span>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-bold text-white text-base">Lifting sem Cortes Infalível</h4>
+                        <p class="text-xs text-slate-400">Eliminação total da flacidez no pescoço e mandíbula em 15 minutos com tecnologia milagrosa exclusiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços, Pacotes e Venda Casada com Apelo Mercantil (Infração: Art. 13 CFM) -->
+    <section id="tratamentos" class="py-16 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-purple-400 text-xs font-bold uppercase tracking-widest">Valores Imbatíveis</span>
+                <h2 class="text-3xl font-extrabold sm:text-4xl text-white mt-1">Tabela de Preços Promocionais & Combos</h2>
+                <p class="text-slate-400 text-sm mt-2">Aproveite nossa liquidação de tratamentos estéticos. Pagamento facilitado em até 18x no carnê!</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pacote 1 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 relative flex flex-col justify-between hover:border-pink-500 transition shadow-xl">
+                    <span class="absolute -top-3 right-6 bg-pink-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Sorteio de Brinde</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Combo Botox Total</h3>
+                        <p class="text-xs text-slate-400 mt-1">Aplicação em todas as áreas do rosto + Retoque Grátis.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-xs text-slate-500 line-through">De R$ 1.800,00</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-xs text-slate-400">Por apenas</span>
+                                <span class="text-3xl font-extrabold text-pink-500">12x R$ 89,90</span>
+                            </div>
+                            <span class="text-[10px] text-green-400 font-semibold">Economia imediata de R$ 700,00</span>
+                        </div>
+
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-500"></i> Ganhe 1 sessão de Limpeza de Pele</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-500"></i> Participe do Sorteio de um iPhone 15</li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="w-full bg-slate-800 hover:bg-pink-600 text-white font-bold py-3 rounded-xl transition text-center text-xs">Comprar Cupom de Botox</a>
+                </div>
+
+                <!-- Pacote 2 (Destaque Mercantil) -->
+                <div class="bg-gradient-to-b from-purple-950/80 to-slate-950 border-2 border-purple-500 rounded-2xl p-6 relative flex flex-col justify-between shadow-2xl scale-105">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pink-500 to-purple-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Venda Casada Especial
+                    </span>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mt-2">Plano Harmonização VIP</h3>
+                        <p class="text-xs text-slate-300 mt-1">Preenchimento + Bioestimulador + Fios de Sustentação.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-xs text-slate-400 line-through">De R$ 4.500,00</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-xs text-purple-300">Apenas</span>
+                                <span class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-300">R$ 1.990</span>
+                            </div>
+                            <span class="text-[10px] text-yellow-300 font-semibold">Oferta válida somente para as 5 primeiras pessoas!</span>
+                        </div>
+
+                        <ul class="space-y-2 text-xs text-slate-200 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Leve 3 Seringas e Pague Apenas 2</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Desconto acumulativo para amigas</li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-extrabold py-3 rounded-xl transition text-center text-xs shadow-lg">Garantir Desconto Exclusivo</a>
+                </div>
+
+                <!-- Pacote 3 -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 relative flex flex-col justify-between hover:border-pink-500 transition shadow-xl">
+                    <span class="absolute -top-3 right-6 bg-purple-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Black Week</span>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Laser Ultra-Secativo de Manchas</h3>
+                        <p class="text-xs text-slate-400 mt-1">Remoção imediata de melasma e tatuagens sem dor.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-xs text-slate-500 line-through">De R$ 900,00</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-xs text-slate-400">Por</span>
+                                <span class="text-3xl font-extrabold text-pink-500">R$ 299,00</span>
+                            </div>
+                            <span class="text-[10px] text-green-400 font-semibold">Sessão avulsa com preço de custo</span>
+                        </div>
+
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-500"></i> Resultados milagrosos instantâneos</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-pink-500"></i> Sem necessidade de repetição</li>
+                        </ul>
+                    </div>
+                    <a href="#agendar" class="w-full bg-slate-800 hover:bg-pink-600 text-white font-bold py-3 rounded-xl transition text-center text-xs">Agendar Procedimento Barato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Agendamento -->
+    <section id="agendar" class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-white">Agende sua Avaliação com Desconto</h3>
+                    <p class="text-xs text-slate-400 mt-1">Preencha os dados abaixo para reservar sua vaga na promoção e garantir o preço exclusivo.</p>
+                </div>
+
+                <form id="form-agendamento" onsubmit="event.preventDefault(); alert('Solicitação enviada para simulação de auditoria!');" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Nome Completo</label>
+                            <input type="text" placeholder="Seu nome completo" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-pink-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">WhatsApp/Telefone</label>
+                            <input type="tel" placeholder="(00) 00000-0000" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-pink-500 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Procedimento de Interesse</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-pink-500 transition">
+                            <option>Promoção Botox 50% OFF + Preenchimento Grátis</option>
+                            <option>Harmonização VIP com Desconto</option>
+                            <option>Remoção Definitiva de Melasma</option>
+                            <option>Outros Procedimentos Estéticos</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-3.5 rounded-xl transition text-sm shadow-lg shadow-pink-500/25">
+                        Confirmar Agendamento e Garantir Desconto
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Painel Interativo de Simulação de Auditoria de IA para Testes -->
+    <section id="auditoria-testes" class="py-12 bg-slate-900/80 border-t border-purple-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-purple-950/40 border border-purple-500/40 rounded-2xl p-6 sm:p-8">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 bg-pink-500/20 text-pink-300 text-xs font-bold px-3 py-1 rounded-full border border-pink-500/30">
+                            <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Ferramenta de Teste para Scraping & LLMs
+                        </span>
+                        <h3 class="text-xl font-bold text-white mt-2">Detector de Infrações da Resolução CFM nº 2.336/2023</h3>
+                        <p class="text-xs text-slate-400 mt-1">Este site foi construído propositalmente com violações éticas para testar agentes como Devin, Firecrawl e Ollama/LLMs.</p>
+                    </div>
+
+                    <button onclick="executarAuditoriaSimulada()" class="bg-purple-600 hover:bg-purple-500 text-white font-bold px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 transition shadow-lg shrink-0">
+                        <i data-lucide="play" class="w-4 h-4"></i> Simular Auditoria de IA
+                    </button>
+                </div>
+
+                <!-- Tabela de Infrações embutidas no site -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="border-b border-purple-500/30 text-purple-300 uppercase tracking-wider text-[10px]">
+                                <th class="py-2.5 px-3">Artigo CFM</th>
+                                <th class="py-2.5 px-3">Infracão Encontrada no HTML</th>
+                                <th class="py-2.5 px-3">Trecho Afetado</th>
+                                <th class="py-2.5 px-3">Gravidade</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 text-slate-300">
+                            <tr>
+                                <td class="py-2.5 px-3 font-mono font-bold text-pink-400">Art. 3º e 4º</td>
+                                <td class="py-2.5 px-3">Ausência de RQE ao anunciar especialidade médica ("Dermatologista")</td>
+                                <td class="py-2.5 px-3 italic text-slate-400">"Dra. Vanessa Rios - Dermatologista" (Sem RQE registrado)</td>
+                                <td class="py-2.5 px-3"><span class="bg-red-500/20 text-red-300 text-[10px] px-2 py-0.5 rounded font-bold">ALTA</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-mono font-bold text-pink-400">Art. 9º</td>
+                                <td class="py-2.5 px-3">Promessa de resultado garantido/definitivo e uso de superlativos</td>
+                                <td class="py-2.5 px-3 italic text-slate-400">"Elimine 100% das Rugas com Resultado Garantido e Definitivo!"</td>
+                                <td class="py-2.5 px-3"><span class="bg-red-500/20 text-red-300 text-[10px] px-2 py-0.5 rounded font-bold">GRAVÍSSIMA</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-mono font-bold text-pink-400">Art. 11º</td>
+                                <td class="py-2.5 px-3">Antes e Depois sem ressalva biológica individual ou texto educativo</td>
+                                <td class="py-2.5 px-3 italic text-slate-400">"O mesmo resultado exato acontecerá com você!"</td>
+                                <td class="py-2.5 px-3"><span class="bg-amber-500/20 text-amber-300 text-[10px] px-2 py-0.5 rounded font-bold">MÉDIA</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-mono font-bold text-pink-400">Art. 13º</td>
+                                <td class="py-2.5 px-3">Mercantilização, apelo de Black Friday, cupons e venda casada de Botox</td>
+                                <td class="py-2.5 px-3 italic text-slate-400">"Botox com 50% OFF + Ganhe Preenchimento" / "Sorteio de iPhone"</td>
+                                <td class="py-2.5 px-3"><span class="bg-red-500/20 text-red-300 text-[10px] px-2 py-0.5 rounded font-bold">GRAVÍSSIMA</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-2.5 px-3 font-mono font-bold text-pink-400">Art. 8º</td>
+                                <td class="py-2.5 px-3">Ausência de identificação do Diretor Técnico Médico no rodapé</td>
+                                <td class="py-2.5 px-3 italic text-slate-400">Rodapé do site omitindo o nome e CRM do responsável técnico</td>
+                                <td class="py-2.5 px-3"><span class="bg-amber-500/20 text-amber-300 text-[10px] px-2 py-0.5 rounded font-bold">MÉDIA</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal de Resultado Simulado de Auditoria IA -->
+                <div id="resultado-auditoria" class="hidden mt-6 p-4 bg-slate-950 rounded-xl border border-pink-500/30 text-xs font-mono space-y-2 text-pink-300">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                        <span class="font-bold text-white flex items-center gap-2">
+                            <i data-lucide="bot" class="w-4 h-4 text-pink-400"></i> Relatório de Auditoria Gerado por IA (Simulação JSON)
+                        </span>
+                        <span class="text-[10px] text-slate-500">Modelo: Ollama / Qwen 2.5 Audit Engine</span>
+                    </div>
+                    <pre class="overflow-x-auto text-[11px] text-slate-300 leading-relaxed">
+{
+  "status_auditoria": "NÃO CONFORME",
+  "infracoes_detectadas": 5,
+  "norma_referencia": "RESOLUÇÃO CFM Nº 2.336/2023",
+  "detalhes": [
+    { "artigo": "9", "tipo": "Promessa de Resultado", "trecho": "Elimine 100% das Rugas...", "acao": "Remover alegações definitivas" },
+    { "artigo": "3", "tipo": "Ausência de RQE", "medico": "Dra. Vanessa Rios", "acao": "Cadastrar RQE ou remover termo 'Dermatologista'" },
+    { "artigo": "13", "tipo": "Mercantilização", "trecho": "Botox com 50% OFF", "acao": "Proibido ofertar descontos/sorteios" },
+    { "artigo": "8", "tipo": "Diretor Técnico Omisso", "acao": "Incluir nome e CRM do Diretor Técnico no rodapé" }
+  ]
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Completo - Com Ausência do Diretor Técnico Médico (Infração: Art. 8º CFM) -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-pink-500 flex items-center justify-center text-white font-bold">D</div>
+                        <span class="text-base font-bold text-white">DermaPerfeita</span>
+                    </div>
+                    <p class="text-slate-500 text-xs leading-relaxed">
+                        A clínica número 1 em rejuvenescimento sem cortes e estética avançada.
+                    </p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-[11px]">Contato & Endereço</h5>
+                    <p class="text-slate-400">Av. Paulista, 1000 - Conjunto 501</p>
+                    <p class="text-slate-400">São Paulo - SP</p>
+                    <p class="text-slate-400 mt-2">WhatsApp: (11) 99999-8888</p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-200 mb-3 uppercase tracking-wider text-[11px]">Links Rápidos</h5>
+                    <ul class="space-y-1.5">
+                        <li><a href="#tratamentos" class="hover:text-pink-400">Tabela de Preços</a></li>
+                        <li><a href="#resultados" class="hover:text-pink-400">Antes e Depois</a></li>
+                        <li><a href="#agendar" class="hover:text-pink-400">Agendar Consulta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Área de Informações Regulatórias (Demonstrando omissão do Diretor Técnico) -->
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <h5 class="font-bold text-slate-200 text-[11px] uppercase tracking-wider">Informações Legais</h5>
+                    <p class="text-[11px] text-slate-400">Clínica DermaPerfeita LTDA</p>
+                    <p class="text-[11px] text-slate-400">CNPJ: 00.000.000/0001-00</p>
+                    
+                    <!-- INFRAÇÃO: Não cita o Diretor Técnico Médico exigido pelo CFM para estabelecimentos de saúde -->
+                    <div class="pt-2 border-t border-slate-800 text-[10px] text-red-400/80">
+                        ⚠️ <span class="underline">Infração Regulamentar</span>: Diretor Técnico Médico não identificado neste rodapé (Exigência do Art. 8º da Resolução CFM nº 2.336/2023).
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-6 text-center text-slate-600 text-[11px] flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 Clínica DermaPerfeita - Todos os direitos reservados. Página desenvolvida para testes de IA e Scraping de Compliance.</p>
+                <div class="flex gap-4 text-slate-500">
+                    <a href="#" class="hover:text-slate-400">Termos</a>
+                    <a href="#" class="hover:text-slate-400">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts para Ícones e Interatividade do Teste -->
+    <script>
+        // Inicializar Lucide Icons
+        lucide.createIcons();
+
+        // Timer Regressivo Simulado para o Banner de Oferta
+        function startCountdown() {
+            let duration = 9912; // segundos
+            const timerDisplay = document.getElementById('countdown');
+            
+            setInterval(() => {
+                let hours = Math.floor(duration / 3600);
+                let minutes = Math.floor((duration % 3600) / 60);
+                let seconds = duration % 60;
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                if (timerDisplay) {
+                    timerDisplay.textContent = `${hours}h ${minutes}m ${seconds}s`;
+                }
+
+                if (--duration < 0) {
+                    duration = 9912;
+                }
+            }, 1000);
+        }
+
+        // Exibir o painel de JSON simulado da IA
+        function executarAuditoriaSimulada() {
+            const painel = document.getElementById('resultado-auditoria');
+            if (painel) {
+                painel.classList.toggle('hidden');
+                if (!painel.classList.contains('hidden')) {
+                    painel.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
+        window.onload = function() {
+            startCountdown();
+        };
+    </script>
+</body>
+</html>
